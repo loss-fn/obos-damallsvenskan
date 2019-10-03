@@ -7,5 +7,15 @@
 import requests
 from bs4 import BeautifulSoup
 
+## Data on Damallsvenskan results for 2019 is found on
+## https://obosdamallsvenskan.se/spelschema/da_2019_regular, unfortunately
+## the data for previous seasons is not available anymore.
+
+def scrape(url = "https://obosdamallsvenskan.se/spelschema/da_2019_regular"):
+    page = requests.get(url)
+    soup = BeautifulSoup(page.text, 'html.parser')
+    return soup
+
 if __name__ == "__main__":
-    pass
+    ## testing it out
+    print(scrape())
