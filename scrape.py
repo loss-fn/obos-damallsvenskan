@@ -83,6 +83,15 @@ def extract(soup):
     
     return result
 
+def to_csv(result, filename):
+    with open(filename, 'w') as f:
+        for row in result:
+            f.write(row+ '\n')
+
 if __name__ == "__main__":
-    ## testing it out
-    print(extract(scrape()))
+    import argparse
+    parser = argparse.ArgumentParser(description = 'Scrape match data from web site and store in <filename>.')
+    parser.add_argument('filename', nargs = 1, help = 'filename of .csv file with extracted match data')
+    args = parser.parse_args()
+
+    to_csv(extract(scrape()), args.filename[0])
