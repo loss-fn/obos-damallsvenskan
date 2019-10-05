@@ -17,7 +17,7 @@ def scrape(url = "https://obosdamallsvenskan.se/spelschema/da_2019_regular"):
     return soup
 
 def extract(soup):
-    result = ["Round;Date;Home;Away;Score", ]
+    result = ["Round,Date,Home,Away,Score", ]
 
     ## after poking around in the HTML a while it turns out that everything we
     ## need is included inside a number of div elements of class
@@ -30,7 +30,7 @@ def extract(soup):
         away = game.find("div", class_ = "rmss_c-schedule-game__team is-away-team").text.strip().replace('\n', ' ')
         score = game.find("div", class_ = "rmss_c-schedule-game__result").text.strip().replace('\n', '')
 
-        result.append("%s;%s;%s;%s;%s" % (round_, date_, home, away, score))
+        result.append("%s,%s,%s,%s,%s" % (round_, date_, home, away, score))
     
     return result
 
