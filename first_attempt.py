@@ -16,7 +16,7 @@ def test_data(df):
     return x, y
 
 def make_classifier(xTrain, yTrain):
-    clf = RandomForestClassifier()
+    clf = RandomForestClassifier(n_estimators = 10)
     clf.fit(xTrain, yTrain)
     return clf
 
