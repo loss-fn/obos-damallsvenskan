@@ -1,0 +1,133 @@
+,Round,Date,Home,Away,Score,Round_,Home_,Away_,HomeScore,AwayScore
+0,Omgång 1,2019-04-13,Kungsbacka KUN,Kopparbergs / Göteborg KOP,0-3,0,4,2,0,3
+1,Omgång 1,2019-04-14,Eskilstuna ESK,Rosengård FCR,0-1,0,1,8,0,1
+2,Omgång 1,2019-04-14,Kristianstad KRI,LB07 LIM,5-1,0,3,5,5,1
+3,Omgång 1,2019-04-14,Piteå PIT,Djurgården DIF,1-0,0,7,0,1,0
+4,Omgång 1,2019-04-14,Örebro ÖRE,Vittsjö VIT,1-0,0,11,9,1,0
+5,Omgång 1,2019-04-17,Linköping LFC,Växjö VÄX,5-0,0,6,10,5,0
+6,Omgång 2,2019-04-21,Kopparbergs / Göteborg KOP,Eskilstuna ESK,1-1,11,2,1,1,1
+7,Omgång 2,2019-04-21,Rosengård FCR,Kristianstad KRI,5-1,11,8,3,5,1
+8,Omgång 2,2019-04-22,Växjö VÄX,Piteå PIT,0-0,11,10,7,0,0
+9,Omgång 2,2019-04-22,Vittsjö VIT,Kungsbacka KUN,3-0,11,9,4,3,0
+10,Omgång 2,2019-04-22,LB07 LIM,Örebro ÖRE,1-3,11,5,11,1,3
+11,Omgång 2,2019-04-22,Djurgården DIF,Linköping LFC,2-3,11,0,6,2,3
+12,Omgång 3,2019-04-27,Örebro ÖRE,Rosengård FCR,0-4,15,11,8,0,4
+13,Omgång 3,2019-04-27,Kungsbacka KUN,Djurgården DIF,1-2,15,4,0,1,2
+14,Omgång 3,2019-04-28,Vittsjö VIT,Linköping LFC,2-0,15,9,6,2,0
+15,Omgång 3,2019-04-28,Kristianstad KRI,Kopparbergs / Göteborg KOP,2-2,15,3,2,2,2
+16,Omgång 3,2019-04-28,Eskilstuna ESK,Växjö VÄX,0-1,15,1,10,0,1
+17,Omgång 4,2019-05-02,Växjö VÄX,Vittsjö VIT,1-1,16,10,9,1,1
+18,Omgång 4,2019-05-05,LB07 LIM,Eskilstuna ESK,0-1,16,5,1,0,1
+19,Omgång 4,2019-05-05,Kungsbacka KUN,Piteå PIT,1-5,16,4,7,1,5
+20,Omgång 4,2019-05-05,Djurgården DIF,Kristianstad KRI,0-2,16,0,3,0,2
+21,Omgång 4,2019-05-05,Rosengård FCR,Kopparbergs / Göteborg KOP,2-2,16,8,2,2,2
+22,Omgång 4,2019-05-06,Linköping LFC,Örebro ÖRE,4-1,16,6,11,4,1
+23,Omgång 5,2019-05-11,Vittsjö VIT,Eskilstuna ESK,1-0,17,9,1,1,0
+24,Omgång 5,2019-05-11,Örebro ÖRE,Växjö VÄX,1-0,17,11,10,1,0
+25,Omgång 5,2019-05-11,Linköping LFC,Kungsbacka KUN,2-0,17,6,4,2,0
+26,Omgång 5,2019-05-11,Kopparbergs / Göteborg KOP,Djurgården DIF,3-1,17,2,0,3,1
+27,Omgång 5,2019-05-11,LB07 LIM,Rosengård FCR,3-2,17,5,8,3,2
+28,Omgång 5,2019-05-12,Piteå PIT,Kristianstad KRI,2-1,17,7,3,2,1
+29,Omgång 6,2019-05-15,Växjö VÄX,Kopparbergs / Göteborg KOP,0-2,18,10,2,0,2
+30,Omgång 6,2019-05-15,Kungsbacka KUN,LB07 LIM,2-2,18,4,5,2,2
+31,Omgång 6,2019-05-15,Kristianstad KRI,Linköping LFC,1-1,18,3,6,1,1
+32,Omgång 6,2019-05-15,Djurgården DIF,Vittsjö VIT,1-3,18,0,9,1,3
+33,Omgång 6,2019-05-15,Rosengård FCR,Piteå PIT,2-0,18,8,7,2,0
+34,Omgång 6,2019-05-15,Eskilstuna ESK,Örebro ÖRE,0-0,18,1,11,0,0
+35,Omgång 7,2019-05-19,Vittsjö VIT,Piteå PIT,0-0,19,9,7,0,0
+36,Omgång 7,2019-05-19,Kopparbergs / Göteborg KOP,LB07 LIM,3-0,19,2,5,3,0
+37,Omgång 7,2019-05-19,Kristianstad KRI,Eskilstuna ESK,3-0,19,3,1,3,0
+38,Omgång 7,2019-05-19,Örebro ÖRE,Kungsbacka KUN,1-0,19,11,4,1,0
+39,Omgång 7,2019-05-20,Djurgården DIF,Växjö VÄX,3-0,19,0,10,3,0
+40,Omgång 7,2019-05-20,Linköping LFC,Rosengård FCR,0-0,19,6,8,0,0
+41,Omgång 3,2019-05-23,Piteå PIT,LB07 LIM,2-1,15,7,5,2,1
+42,Omgång 8,2019-07-20,LB07 LIM,Djurgården DIF,0-1,20,5,0,0,1
+43,Omgång 8,2019-07-20,Kungsbacka KUN,Kristianstad KRI,0-5,20,4,3,0,5
+44,Omgång 8,2019-07-21,Vittsjö VIT,Kopparbergs / Göteborg KOP,2-4,20,9,2,2,4
+45,Omgång 8,2019-07-21,Piteå PIT,Örebro ÖRE,0-3,20,7,11,0,3
+46,Omgång 8,2019-07-21,Rosengård FCR,Växjö VÄX,5-0,20,8,10,5,0
+47,Omgång 8,2019-07-22,Eskilstuna ESK,Linköping LFC,2-0,20,1,6,2,0
+48,Omgång 9,2019-07-26,Växjö VÄX,LB07 LIM,3-1,21,10,5,3,1
+49,Omgång 9,2019-07-26,Kristianstad KRI,Vittsjö VIT,0-3,21,3,9,0,3
+50,Omgång 9,2019-07-27,Kopparbergs / Göteborg KOP,Örebro ÖRE,0-0,21,2,11,0,0
+51,Omgång 9,2019-07-27,Rosengård FCR,Kungsbacka KUN,6-1,21,8,4,6,1
+52,Omgång 9,2019-07-28,Linköping LFC,Piteå PIT,0-0,21,6,7,0,0
+53,Omgång 9,2019-07-28,Djurgården DIF,Eskilstuna ESK,0-3,21,0,1,0,3
+54,Omgång 10,2019-07-31,Växjö VÄX,Kristianstad KRI,2-2,1,10,3,2,2
+55,Omgång 10,2019-07-31,Vittsjö VIT,Rosengård FCR,0-0,1,9,8,0,0
+56,Omgång 10,2019-07-31,Örebro ÖRE,Djurgården DIF,3-1,1,11,0,3,1
+57,Omgång 10,2019-07-31,Kopparbergs / Göteborg KOP,Piteå PIT,1-1,1,2,7,1,1
+58,Omgång 10,2019-07-31,Eskilstuna ESK,Kungsbacka KUN,3-0,1,1,4,3,0
+59,Omgång 10,2019-07-31,LB07 LIM,Linköping LFC,0-4,1,5,6,0,4
+60,Omgång 11,2019-08-04,Linköping LFC,Kopparbergs / Göteborg KOP,1-0,2,6,2,1,0
+61,Omgång 11,2019-08-04,Kristianstad KRI,Örebro ÖRE,2-0,2,3,11,2,0
+62,Omgång 11,2019-08-04,Kungsbacka KUN,Växjö VÄX,0-3,2,4,10,0,3
+63,Omgång 11,2019-08-04,Piteå PIT,Eskilstuna ESK,3-1,2,7,1,3,1
+64,Omgång 11,2019-08-04,LB07 LIM,Vittsjö VIT,0-3,2,5,9,0,3
+65,Omgång 11,2019-08-05,Djurgården DIF,Rosengård FCR,0-3,2,0,8,0,3
+66,Omgång 12,2019-08-09,Växjö VÄX,Djurgården DIF,2-1,3,10,0,2,1
+67,Omgång 12,2019-08-10,Örebro ÖRE,Piteå PIT,1-0,3,11,7,1,0
+68,Omgång 12,2019-08-10,Vittsjö VIT,LB07 LIM,4-0,3,9,5,4,0
+69,Omgång 12,2019-08-10,Rosengård FCR,Eskilstuna ESK,2-1,3,8,1,2,1
+70,Omgång 12,2019-08-10,Kopparbergs / Göteborg KOP,Kungsbacka KUN,6-0,3,2,4,6,0
+71,Omgång 12,2019-08-10,Linköping LFC,Kristianstad KRI,0-0,3,6,3,0,0
+72,Omgång 13,2019-08-14,Rosengård FCR,LB07 LIM,3-0,4,8,5,3,0
+73,Omgång 13,2019-08-14,Kristianstad KRI,Växjö VÄX,3-1,4,3,10,3,1
+74,Omgång 13,2019-08-14,Kungsbacka KUN,Linköping LFC,2-1,4,4,6,2,1
+75,Omgång 13,2019-08-14,Örebro ÖRE,Kopparbergs / Göteborg KOP,0-3,4,11,2,0,3
+76,Omgång 13,2019-08-14,Eskilstuna ESK,Djurgården DIF,4-2,4,1,0,4,2
+77,Omgång 13,2019-08-14,Piteå PIT,Vittsjö VIT,0-0,4,7,9,0,0
+78,Omgång 14,2019-08-18,Kopparbergs / Göteborg KOP,Kristianstad KRI,2-0,5,2,3,2,0
+79,Omgång 14,2019-08-18,Eskilstuna ESK,Piteå PIT,1-1,5,1,7,1,1
+80,Omgång 14,2019-08-18,Linköping LFC,Vittsjö VIT,2-1,5,6,9,2,1
+81,Omgång 14,2019-08-20,LB07 LIM,Kungsbacka KUN,2-0,5,5,4,2,0
+82,Omgång 14,2019-08-20,Växjö VÄX,Rosengård FCR,0-0,5,10,8,0,0
+83,Omgång 14,2019-08-21,Djurgården DIF,Örebro ÖRE,1-4,5,0,11,1,4
+84,Omgång 15,2019-08-24,Kopparbergs / Göteborg KOP,Linköping LFC,1-1,6,2,6,1,1
+85,Omgång 15,2019-08-24,Kungsbacka KUN,Eskilstuna ESK,0-4,6,4,1,0,4
+86,Omgång 15,2019-08-25,Vittsjö VIT,Växjö VÄX,2-0,6,9,10,2,0
+87,Omgång 15,2019-08-25,Piteå PIT,Rosengård FCR,1-1,6,7,8,1,1
+88,Omgång 15,2019-08-25,Kristianstad KRI,Djurgården DIF,2-0,6,3,0,2,0
+89,Omgång 15,2019-08-25,Örebro ÖRE,LB07 LIM,0-1,6,11,5,0,1
+90,Omgång 16,2019-09-07,Eskilstuna ESK,Kopparbergs / Göteborg KOP,2-1,7,1,2,2,1
+91,Omgång 16,2019-09-07,Örebro ÖRE,Kristianstad KRI,0-1,7,11,3,0,1
+92,Omgång 16,2019-09-07,LB07 LIM,Piteå PIT,1-1,7,5,7,1,1
+93,Omgång 16,2019-09-07,Kungsbacka KUN,Vittsjö VIT,0-1,7,4,9,0,1
+94,Omgång 16,2019-09-08,Rosengård FCR,Djurgården DIF,3-1,7,8,0,3,1
+95,Omgång 16,2019-09-09,Växjö VÄX,Linköping LFC,1-0,7,10,6,1,0
+96,Omgång 17,2019-09-13,Linköping LFC,Eskilstuna ESK,0-1,8,6,1,0,1
+97,Omgång 17,2019-09-14,Kristianstad KRI,Kungsbacka KUN,5-0,8,3,4,5,0
+98,Omgång 17,2019-09-15,Piteå PIT,Växjö VÄX,4-1,8,7,10,4,1
+99,Omgång 17,2019-09-15,Vittsjö VIT,Örebro ÖRE,1-0,8,9,11,1,0
+100,Omgång 17,2019-09-15,Kopparbergs / Göteborg KOP,Rosengård FCR,0-2,8,2,8,0,2
+101,Omgång 17,2019-09-15,Djurgården DIF,LB07 LIM,0-0,8,0,5,0,0
+102,Omgång 18,2019-09-21,LB07 LIM,Kristianstad KRI,2-2,9,5,3,2,2
+103,Omgång 18,2019-09-21,Djurgården DIF,Kopparbergs / Göteborg KOP,1-3,9,0,2,1,3
+104,Omgång 18,2019-09-22,Rosengård FCR,Örebro ÖRE,3-1,9,8,11,3,1
+105,Omgång 18,2019-09-22,Piteå PIT,Linköping LFC,1-0,9,7,6,1,0
+106,Omgång 18,2019-09-22,Eskilstuna ESK,Vittsjö VIT,1-0,9,1,9,1,0
+107,Omgång 18,2019-09-23,Växjö VÄX,Kungsbacka KUN,5-5,9,10,4,5,5
+108,Omgång 19,2019-09-26,Linköping LFC,Djurgården DIF,4-1,10,6,0,4,1
+109,Omgång 19,2019-09-28,LB07 LIM,Växjö VÄX,1-1,10,5,10,1,1
+110,Omgång 19,2019-09-28,Kungsbacka KUN,Rosengård FCR,1-2,10,4,8,1,2
+111,Omgång 19,2019-09-29,Kopparbergs / Göteborg KOP,Vittsjö VIT,2-1,10,2,9,2,1
+112,Omgång 19,2019-09-29,Kristianstad KRI,Piteå PIT,1-1,10,3,7,1,1
+113,Omgång 19,2019-09-29,Örebro ÖRE,Eskilstuna ESK,2-2,10,11,1,2,2
+114,Omgång 20,2019-10-12,Piteå PIT,Kopparbergs / Göteborg KOP,0-0,12,7,2,0,0
+115,Omgång 20,2019-10-12,Djurgården DIF,Kungsbacka KUN,0-0,12,0,4,0,0
+116,Omgång 20,2019-10-13,Vittsjö VIT,Kristianstad KRI,0-0,12,9,3,0,0
+117,Omgång 20,2019-10-13,Växjö VÄX,Örebro ÖRE,0-0,12,10,11,0,0
+118,Omgång 20,2019-10-13,Rosengård FCR,Linköping LFC,0-0,12,8,6,0,0
+119,Omgång 20,2019-10-13,Eskilstuna ESK,LB07 LIM,0-0,12,1,5,0,0
+120,Omgång 21,2019-10-19,Kungsbacka KUN,Örebro ÖRE,0-0,13,4,11,0,0
+121,Omgång 21,2019-10-19,Eskilstuna ESK,Kristianstad KRI,0-0,13,1,3,0,0
+122,Omgång 21,2019-10-20,Djurgården DIF,Piteå PIT,0-0,13,0,7,0,0
+123,Omgång 21,2019-10-20,Kopparbergs / Göteborg KOP,Växjö VÄX,0-0,13,2,10,0,0
+124,Omgång 21,2019-10-20,Rosengård FCR,Vittsjö VIT,0-0,13,8,9,0,0
+125,Omgång 21,2019-10-20,Linköping LFC,LB07 LIM,0-0,13,6,5,0,0
+126,Omgång 22,2019-10-26,Vittsjö VIT,Djurgården DIF,0-0,14,9,0,0,0
+127,Omgång 22,2019-10-26,Växjö VÄX,Eskilstuna ESK,0-0,14,10,1,0,0
+128,Omgång 22,2019-10-26,Örebro ÖRE,Linköping LFC,0-0,14,11,6,0,0
+129,Omgång 22,2019-10-26,LB07 LIM,Kopparbergs / Göteborg KOP,0-0,14,5,2,0,0
+130,Omgång 22,2019-10-26,Kristianstad KRI,Rosengård FCR,0-0,14,3,8,0,0
+131,Omgång 22,2019-10-26,Piteå PIT,Kungsbacka KUN,0-0,14,7,4,0,0

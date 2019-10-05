@@ -9,6 +9,27 @@ import pandas as pd
 
 def transform(filename):
     df = pd.read_csv(filename, delimiter = ';')
+
+    ## we'll start with transformations to take the data from:
+    ## Omgång 1;2019-04-13;Kungsbacka KUN;Kopparbergs / Göteborg KOP;0-3
+    
+    ## to something along the lines of
+    ## ... ,0,4,2,0,3
+
+    ## Round => Round_ (removing the "Omgång " text);
+    df['Round_'] = df['Round'].astype('category').cat.codes
+
+    ## Date = 2019-04-13 (no touching this field);
+    ## Home => HomeCat (transforming the team name to a categorical number);
+    df['Home_'] = df['Home'].astype('category').cat.codes
+    ## Away => AwayCat (see above);
+    df['Away_'] = df['Away'].astype('category').cat.codes
+
+    ## Score = 0 (home and away score split into two fields);
+    ## Score = 3 (see above)
+    df['HomeScore'] = df['Score'].apply(lambda x: x.split('-')[0])
+    df['AwayScore'] = df['Score'].apply(lambda x: x.split('-')[-1])
+
     return df
 
 def to_csv(df, filename):
