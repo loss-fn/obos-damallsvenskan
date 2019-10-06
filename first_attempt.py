@@ -1,9 +1,10 @@
-import pandas
+import numpy as np
+import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 
 def load_(filename):
-    return pandas.read_csv(filename)
+    return pd.read_csv(filename)
 
 def training_data(df):
     x = df.iloc[:108, 6:-2].to_numpy()
@@ -20,13 +21,16 @@ def make_classifier(xTrain, yTrain):
     clf.fit(xTrain, yTrain)
     return clf
 
-def validate(clf, xTest, yTest):
+def test_classifier(clf, xTest, yTest):
     pTest = clf.predict(xTest)
-    print(pTest)
-    print(yTest)
+    return pTest, score_prediction(pTest, yTest)
+    
+def score_prediction(pTest, yTest):
+    pDiff = yTest[:,:]-pTest
+    return sum(sum(pDiff))
 
 if __name__ == "__main__":
     xTrain, yTrain = training_data(load_('train.csv'))
     xTest, yTest = test_data(load_('train.csv'))
     clf = make_classifier(xTrain, yTrain)
-    validate(clf, xTest, yTest)
+    print(test_classifier(clf, xTest, yTest))
