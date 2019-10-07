@@ -50,11 +50,24 @@ def predict(clfs, xTest):
     return result[:,:].mean(axis = 0).round()
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description = 'Predict the results of Round 19 with a RandomForestClassifier.')
+    parser.add_argument('--test', dest='test', action='store_const',
+                        const = True, default = False,
+                        help = 'Test the classifier(s) and print a score (instead of predicting).')
+    args = parser.parse_args()
+
     xTrain, yTrain = training_data(load_('train.csv'))
     xTest, yTest = test_data(load_('train.csv'))
-    clfs = make_classifiers(xTrain, yTrain)
-    #print(test_classifiers(clfs, xTest, yTest))
-    pTest = predict(clfs, xTest)
-    print(yTest)
-    print(pTest)
-    print(score_prediction(pTest, yTest))
+    if args.test:
+        clfs = make_classifiers(xTrain, yTrain)   
+        print(test_classifiers(clfs, xTest, yTest))
+
+    else:
+        clfs = make_classifiers(xTrain, yTrain)
+        pTest = predict(clfs, xTest)
+        for label, res in [("Actual", yTest), ("Predicted", pTest)]:
+            print("%s results:" % (label))
+            for match in res:
+                print("%d - %d" % (match[0], match[1]))
+        print("Score: %.2f" % (score_prediction(pTest, yTest)))
