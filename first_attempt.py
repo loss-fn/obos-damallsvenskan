@@ -16,7 +16,7 @@ def training_data(df):
 def test_data(df):
     x = df.iloc[108:114, 6:-2].to_numpy()
     y = df.iloc[108:114, -2:].to_numpy()
-    rest = df.iloc[108:114, 1:5]
+    rest = df.iloc[108:114, 1:6]
     return x, y, rest
 
 def make_classifiers(xTrain, yTrain, n = 100):
@@ -69,7 +69,5 @@ if __name__ == "__main__":
         pTest = predict(clfs, xTest)
         rest['pHo'] = pTest[:,0].astype(int)
         rest['pAw'] = pTest[:,1].astype(int)
-        rest['aHo'] = yTest[:,0].astype(int)
-        rest['aAw'] = yTest[:,1].astype(int)
         print(rest)
         print("Score: %.2f" % (score_prediction(pTest, yTest)))
