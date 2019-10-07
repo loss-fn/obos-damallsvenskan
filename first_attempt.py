@@ -16,7 +16,8 @@ def training_data(df):
 def test_data(df):
     x = df.iloc[108:114, 6:-2].to_numpy()
     y = df.iloc[108:114, -2:].to_numpy()
-    return x, y
+    rest = df.iloc[108:114, 1:5]
+    return x, y, rest
 
 def make_classifiers(xTrain, yTrain, n = 100):
     from random import randint
@@ -58,7 +59,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     xTrain, yTrain = training_data(load_('train.csv'))
-    xTest, yTest = test_data(load_('train.csv'))
+    xTest, yTest, rest = test_data(load_('train.csv'))
     if args.test:
         clfs = make_classifiers(xTrain, yTrain, n = 100)   
         print(test_classifiers(clfs, xTest, yTest, n = 100))
@@ -66,8 +67,9 @@ if __name__ == "__main__":
     else:
         clfs = make_classifiers(xTrain, yTrain, n = 100)
         pTest = predict(clfs, xTest)
-        for label, res in [("Actual", yTest), ("Predicted", pTest)]:
-            print("%s results:" % (label))
-            for match in res:
-                print("%d - %d" % (match[0], match[1]))
+        rest['pHo'] = pTest[:,0].astype(int)
+        rest['pAw'] = pTest[:,1].astype(int)
+        rest['aHo'] = yTest[:,0].astype(int)
+        rest['aAw'] = yTest[:,1].astype(int)
+        print(rest)
         print("Score: %.2f" % (score_prediction(pTest, yTest)))
