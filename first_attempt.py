@@ -18,18 +18,18 @@ def test_data(df):
     y = df.iloc[108:114, -2:].to_numpy()
     return x, y
 
-def make_classifiers(xTrain, yTrain):
+def make_classifiers(xTrain, yTrain, n = 100):
     from random import randint
     result = []
-    for _ in range(100):
+    for _ in range(n):
         clf = RandomForestClassifier(n_estimators = randint(8,32))
         clf.fit(xTrain, yTrain)
         result.append(clf)
     return result
 
-def test_classifiers(clfs, xTest, yTest):
+def test_classifiers(clfs, xTest, yTest, n = 100):
     result = []
-    for _ in range(100):
+    for _ in range(n):
         for clf in clfs:
             pTest = clf.predict(xTest)
             result.append(score_prediction(pTest, yTest))
@@ -60,11 +60,11 @@ if __name__ == "__main__":
     xTrain, yTrain = training_data(load_('train.csv'))
     xTest, yTest = test_data(load_('train.csv'))
     if args.test:
-        clfs = make_classifiers(xTrain, yTrain)   
-        print(test_classifiers(clfs, xTest, yTest))
+        clfs = make_classifiers(xTrain, yTrain, n = 100)   
+        print(test_classifiers(clfs, xTest, yTest, n = 100))
 
     else:
-        clfs = make_classifiers(xTrain, yTrain)
+        clfs = make_classifiers(xTrain, yTrain, n = 100)
         pTest = predict(clfs, xTest)
         for label, res in [("Actual", yTest), ("Predicted", pTest)]:
             print("%s results:" % (label))
