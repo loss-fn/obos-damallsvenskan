@@ -53,13 +53,14 @@ def predict(clfs, xTest):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description = 'Predict the results of Round 19 with a RandomForestClassifier.')
+    parser.add_argument('train', nargs = 1, help = 'filename of .csv file with training data')
     parser.add_argument('--test', dest='test', action='store_const',
                         const = True, default = False,
                         help = 'Test the classifier(s) and print a score (instead of predicting).')
     args = parser.parse_args()
 
-    xTrain, yTrain = training_data(load_('train.csv'))
-    xTest, yTest, rest = test_data(load_('train.csv'))
+    xTrain, yTrain = training_data(load_(args.train[0]))
+    xTest, yTest, rest = test_data(load_(args.train[0]))
     if args.test:
         clfs = make_classifiers(xTrain, yTrain, n = 100)   
         print(test_classifiers(clfs, xTest, yTest, n = 100))
