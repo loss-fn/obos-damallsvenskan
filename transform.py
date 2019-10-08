@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 def transform(filename):
-    df = pd.read_csv(filename, delimiter = ';')
+    df = pd.read_csv(filename, delimiter = ',')
 
     ## we'll start with transformations to take the data from:
     ## Omgång 1;2019-04-13;Kungsbacka KUN;Kopparbergs / Göteborg KOP;0-3
