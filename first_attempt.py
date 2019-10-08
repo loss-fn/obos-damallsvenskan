@@ -39,7 +39,7 @@ def test_classifiers(clfs, xTest, yTest, n = 100):
     
 def score_prediction(pTest, yTest):
     pDiff = yTest[:,:]-pTest
-    return sum(sum(pDiff))
+    return sum(sum(np.abs(pDiff)))
 
 def predict(clfs, xTest):
     result =[] 
