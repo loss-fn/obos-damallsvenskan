@@ -1,3 +1,9 @@
+## Predicting OBOS Damallsvenskan 2019 results
+## -------------------------------------------
+
+## RFClassifier.py is used to predict the outcomes for OBOS Damallsvenskan
+## matches using a RandomForestClassifier.
+
 import statistics
 
 import numpy as np
