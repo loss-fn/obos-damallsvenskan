@@ -20,22 +20,22 @@ def calc_goal_difference(df, team):
 
 def transform(filename):
     df = pd.read_csv(filename, delimiter = ',')
-    df = df.assign(GD = 0, GF = 0, GA = 0, GFH = 0, GFA = 0, GAH = 0, GAA = 0)
+    df = df.assign(GDH = 0, GDA = 0, GFTH = 0, GFTA = 0, GATH = 0, GATA = 0, GFH = 0, GFA = 0, GAH = 0, GAA = 0)
 
     for team in df['Home'].unique():
         goal_difference, goals_for, goals_against, \
         goals_for_home, goals_for_away, \
         goals_against_home, goals_against_away = calc_goal_difference(df, team)
 
-        df.loc[df['Home'] == team, 'GD'] = goal_difference
-        df.loc[df['Away'] == team, 'GD'] = goal_difference
-        df.loc[df['Home'] == team, 'GF'] = goals_for
-        df.loc[df['Away'] == team, 'GF'] = goals_for
+        df.loc[df['Home'] == team, 'GDH'] = goal_difference
+        df.loc[df['Away'] == team, 'GDA'] = goal_difference
+        df.loc[df['Home'] == team, 'GFTH'] = goals_for
+        df.loc[df['Away'] == team, 'GFTA'] = goals_for
         df.loc[df['Home'] == team, 'GFH'] = goals_for_home
         df.loc[df['Away'] == team, 'GFA'] = goals_for_away
 
-        df.loc[df['Home'] == team, 'GA'] = goals_against
-        df.loc[df['Away'] == team, 'GA'] = goals_against
+        df.loc[df['Home'] == team, 'GATH'] = goals_against
+        df.loc[df['Away'] == team, 'GATA'] = goals_against
         df.loc[df['Home'] == team, 'GAH'] = goals_against_home
         df.loc[df['Away'] == team, 'GAA'] = goals_against_away
 
