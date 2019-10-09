@@ -18,6 +18,16 @@ def calc_goal_difference(df, team):
     goal_difference = goals_for - goals_against
     return goal_difference, goals_for, goals_against, goals_for_home, goals_for_away, goals_against_home, goals_against_away
 
+def add_weight_to_rounds(df, rounds = None):
+    if rounds is None:
+        return
+
+    for round in rounds:
+        rows = df[df['Round'] == 'Omgång %d' % (round)]
+        df = pd.concat([df, rows], axis = 0, ignore_index = False)
+
+    return df.sort_values(by = ['Date'], inplace = False)
+
 def transform(filename):
     df = pd.read_csv(filename, delimiter = ',')
     df = df.assign(GDH = 0, GDA = 0, GFTH = 0, GFTA = 0, GATH = 0, GATA = 0, GFH = 0, GFA = 0, GAH = 0, GAA = 0)
@@ -51,4 +61,4 @@ if __name__ == "__main__":
     parser.add_argument('output', nargs = 1, help = 'filename of .csv file with transformed match data')
 
     args = parser.parse_args()
-    to_csv(transform(args.input[0]), args.output[0])
+    to_csv(add_weight_to_rounds(transform(args.input[0]), rounds = [16,17,18]), args.output[0])
