@@ -15,14 +15,14 @@ def load_(filename):
     return pd.read_csv(filename)
 
 def training_data(df):
-    x = df.iloc[:126, 6:-2].to_numpy()
-    y = df.iloc[:126, -2:].to_numpy()
+    x = df.iloc[:138, 6:-2].to_numpy()
+    y = df.iloc[:138, -2:].to_numpy()
     return x, y
 
 def test_data(df):
-    x = df.iloc[126:132, 6:-2].to_numpy()
-    y = df.iloc[126:132, -2:].to_numpy()
-    rest = df.iloc[126:132, 1:6]
+    x = df.iloc[138:, 6:-2].to_numpy()
+    y = df.iloc[138:, -2:].to_numpy()
+    rest = df.iloc[138:, 1:6]
     return x, y, rest
 
 def make_classifiers(xTrain, yTrain, n = 100):
@@ -59,7 +59,7 @@ def predict(clfs, xTest):
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description = 'Predict the results of Round 19 with a RandomForestClassifier.')
+    parser = argparse.ArgumentParser(description = 'Predict the results of Round 20-22 with a RandomForestClassifier.')
     parser.add_argument('train', nargs = 1, help = 'filename of .csv file with training data')
     parser.add_argument('--test', dest='test', action='store_const',
                         const = True, default = False,
@@ -75,7 +75,8 @@ if __name__ == "__main__":
     else:
         clfs = make_classifiers(xTrain, yTrain, n = 100)
         pTest = predict(clfs, xTest)
-        rest['pHo'] = pTest[:,0].astype(int)
-        rest['pAw'] = pTest[:,1].astype(int)
+        rest['pHome'] = pTest[:,0].astype(int)
+        rest['pAway'] = pTest[:,1].astype(int)
+        _ = rest.pop('Score')
         print(rest)
         print("Score: %.2f" % (score_prediction(pTest, yTest)))
