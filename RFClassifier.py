@@ -15,14 +15,14 @@ def load_(filename):
     return pd.read_csv(filename)
 
 def training_data(df):
-    x = df.iloc[:138, 6:-2].to_numpy()
-    y = df.iloc[:138, -2:].to_numpy()
+    x = df.iloc[:144, 6:-2].to_numpy()
+    y = df.iloc[:144, -2:].to_numpy()
     return x, y
 
 def test_data(df):
-    x = df.iloc[138:, 6:-2].to_numpy()
-    y = df.iloc[138:, -2:].to_numpy()
-    rest = df.iloc[138:, 1:6]
+    x = df.iloc[144:, 6:-2].to_numpy()
+    y = df.iloc[144:, -2:].to_numpy()
+    rest = df.iloc[144:, 1:6]
     return x, y, rest
 
 def make_classifiers(xTrain, yTrain, n = 100):
