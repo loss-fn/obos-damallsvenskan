@@ -49,13 +49,19 @@ def score_prediction(pTest, yTest):
     return sum(sum(np.abs(pDiff)))
 
 def predict(clfs, xTest):
-    result =[] 
+    result = []
+    counts = [{} for _ in range(len(xTest))]
     for clf in clfs:
         pTest = clf.predict(xTest)
+        for p, c in zip(pTest, counts):
+            try:
+                c[tuple(p)] += 1
+            except KeyError:
+                c[tuple(p)] = 1
         result.append(pTest)
 
     result = np.asarray(result)
-    return result[:,:].mean(axis = 0).round()
+    return result[:,:].mean(axis = 0).round(), counts
 
 if __name__ == "__main__":
     import argparse
@@ -74,9 +80,16 @@ if __name__ == "__main__":
 
     else:
         clfs = make_classifiers(xTrain, yTrain, n = 100)
-        pTest = predict(clfs, xTest)
+        pTest, pCount = predict(clfs, xTest)
         rest['pHome'] = pTest[:,0].astype(int)
         rest['pAway'] = pTest[:,1].astype(int)
         _ = rest.pop('Score')
+        count = [["%d%% %d-%d" % (c[k], k[0], k[1])
+                    for k in sorted(c.keys(),
+                                    key = lambda x : c[x],
+                                    reverse = True) if c[k] > 10] \
+            for c in pCount]
+        rest['counts'] = np.asarray(count)
+
         print(rest)
         print("Score: %.2f" % (score_prediction(pTest, yTest)))
