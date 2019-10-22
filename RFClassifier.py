@@ -14,15 +14,19 @@ from sklearn.ensemble import RandomForestClassifier
 def load_(filename):
     return pd.read_csv(filename)
 
-def training_data(df):
-    x = df.iloc[:150, 6:-2].to_numpy()
-    y = df.iloc[:150, -2:].to_numpy()
+def get_split_index(df, split_at_round):
+    split_index = df[df.Round_ < split_at_round]
+    return len(split_index)
+
+def training_data(df, split_index):
+    x = df.iloc[:split_index, 6:-2].to_numpy()
+    y = df.iloc[:split_index, -2:].to_numpy()
     return x, y
 
-def test_data(df):
-    x = df.iloc[150:, 6:-2].to_numpy()
-    y = df.iloc[150:, -2:].to_numpy()
-    rest = df.iloc[150:, 1:6]
+def test_data(df, split_index):
+    x = df.iloc[split_index:, 6:-2].to_numpy()
+    y = df.iloc[split_index:, -2:].to_numpy()
+    rest = df.iloc[split_index:, 1:6]
     return x, y, rest
 
 def make_classifiers(xTrain, yTrain, n = 100):
@@ -67,13 +71,19 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description = 'Predict the results of Round 20-22 with a RandomForestClassifier.')
     parser.add_argument('train', nargs = 1, help = 'filename of .csv file with training data')
+    parser.add_argument('round', nargs = 1, help = 'which round of matches to start prediction from')
+    parser.add_argument('--score', dest='score', action='store_const',
+                        const = True, default = False,
+                        help = 'Calculate and print the score for the prediction.')
     parser.add_argument('--test', dest='test', action='store_const',
                         const = True, default = False,
                         help = 'Test the classifier(s) and print a score (instead of predicting).')
     args = parser.parse_args()
 
-    xTrain, yTrain = training_data(load_(args.train[0]))
-    xTest, yTest, rest = test_data(load_(args.train[0]))
+    train_ = load_(args.train[0])
+    split_index = get_split_index(train_, int(args.round[0]))
+    xTrain, yTrain = training_data(train_, split_index)
+    xTest, yTest, rest = test_data(train_, split_index)
     if args.test:
         clfs = make_classifiers(xTrain, yTrain, n = 100)   
         print(test_classifiers(clfs, xTest, yTest, n = 100))
@@ -92,4 +102,5 @@ if __name__ == "__main__":
         rest['counts'] = np.asarray(count)
 
         print(rest)
-        print("Score: %.2f" % (score_prediction(pTest, yTest)))
+        if args.score:
+            print("Score: %.2f" % (score_prediction(pTest, yTest)))

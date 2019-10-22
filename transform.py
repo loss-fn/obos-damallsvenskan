@@ -17,7 +17,7 @@ def transform(filename):
     ## ... ,0,4,2,0,3
 
     ## Round => Round_ (removing the "Omgång " text);
-    df['Round_'] = df['Round'].astype('category').cat.codes
+    df['Round_'] = df['Round'].apply(lambda x: x.split()[1])
 
     ## Date = 2019-04-13 (no touching this field);
     ## Home => HomeCat (transforming the team name to a categorical number);
