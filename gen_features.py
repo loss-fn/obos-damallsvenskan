@@ -113,4 +113,4 @@ if __name__ == "__main__":
     parser.add_argument('output', nargs = 1, help = 'filename of .csv file with transformed match data')
 
     args = parser.parse_args()
-    to_csv(add_weight_to_rounds(transform(args.input[0]), rounds = [17,18,19,20]), args.output[0])
+    to_csv(add_weight_to_rounds(transform(args.input[0]), rounds = [18,19,20,21]), args.output[0])
