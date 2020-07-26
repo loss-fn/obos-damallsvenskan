@@ -11,8 +11,8 @@ from bs4 import BeautifulSoup
 ## https://obosdamallsvenskan.se/spelschema/da_2019_regular, unfortunately
 ## the data for previous seasons is not available anymore.
 
-def scrape(url = "https://obosdamallsvenskan.se/spelschema/da_2019_regular"):
-    page = requests.get(url)
+def scrape(year, url = "https://obosdamallsvenskan.se/spelschema/da_????_regular"):
+    page = requests.get(url.replace('????', str(year)))
     soup = BeautifulSoup(page.text, 'html.parser')
     return soup
 
@@ -42,7 +42,8 @@ def to_csv(result, filename):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description = 'Scrape match data from web site and store in <filename>.')
+    parser.add_argument('year', nargs = 1, type = int, help = 'which year <YYYY> to extract data for')
     parser.add_argument('filename', nargs = 1, help = 'filename of .csv file with extracted match data')
     args = parser.parse_args()
 
-    to_csv(extract(scrape()), args.filename[0])
+    to_csv(extract(scrape(args.year[0])), args.filename[0])
