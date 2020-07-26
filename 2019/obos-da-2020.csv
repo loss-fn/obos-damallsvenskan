@@ -1,0 +1,133 @@
+Round,Date,Home,Away,Score
+Omgång 1,2020-06-27,Umeå IK UME,Piteå PIT,2-3
+Omgång 1,2020-06-27,Linköping LFC,Växjö VÄX,3-0
+Omgång 1,2020-06-27,IK Uppsala UPP,Djurgården DIF,3-2
+Omgång 1,2020-06-27,Örebro ÖRE,Eskilstuna ESK,3-3
+Omgång 1,2020-06-27,Rosengård FCR,Vittsjö VIT,1-0
+Omgång 1,2020-06-28,Kopparbergs / Göteborg KOP,Kristianstad KRI,5-1
+Omgång 2,2020-07-04,Eskilstuna ESK,Kopparbergs / Göteborg KOP,1-1
+Omgång 2,2020-07-04,Växjö VÄX,IK Uppsala UPP,1-1
+Omgång 2,2020-07-04,Kristianstad KRI,Rosengård FCR,0-1
+Omgång 2,2020-07-04,Djurgården DIF,Umeå IK UME,1-1
+Omgång 2,2020-07-05,Vittsjö VIT,Linköping LFC,1-2
+Omgång 2,2020-07-05,Piteå PIT,Örebro ÖRE,1-1
+Omgång 3,2020-07-08,Umeå IK UME,Örebro ÖRE,0-2
+Omgång 3,2020-07-10,Kopparbergs / Göteborg KOP,Växjö VÄX,4-0
+Omgång 3,2020-07-10,Rosengård FCR,Eskilstuna ESK,1-2
+Omgång 3,2020-07-11,Linköping LFC,Djurgården DIF,1-0
+Omgång 3,2020-07-11,IK Uppsala UPP,Piteå PIT,0-1
+Omgång 3,2020-07-11,Vittsjö VIT,Kristianstad KRI,3-3
+Omgång 4,2020-07-15,Piteå PIT,Linköping LFC,2-2
+Omgång 4,2020-07-15,Örebro ÖRE,Kopparbergs / Göteborg KOP,0-1
+Omgång 4,2020-07-15,Växjö VÄX,Rosengård FCR,0-3
+Omgång 4,2020-07-15,IK Uppsala UPP,Umeå IK UME,3-0
+Omgång 4,2020-07-15,Eskilstuna ESK,Kristianstad KRI,2-3
+Omgång 4,2020-07-15,Djurgården DIF,Vittsjö VIT,2-1
+Omgång 5,2020-07-19,Umeå IK UME,Rosengård FCR,0-3
+Omgång 5,2020-07-19,Linköping LFC,Eskilstuna ESK,1-0
+Omgång 5,2020-07-19,Vittsjö VIT,Piteå PIT,0-1
+Omgång 5,2020-07-19,Kristianstad KRI,IK Uppsala UPP,2-1
+Omgång 5,2020-07-19,Örebro ÖRE,Växjö VÄX,1-0
+Omgång 5,2020-07-20,Kopparbergs / Göteborg KOP,Djurgården DIF,2-0
+Omgång 6,2020-07-24,Rosengård FCR,Örebro ÖRE,6-0
+Omgång 6,2020-07-24,Umeå IK UME,Linköping LFC,3-2
+Omgång 6,2020-07-25,Piteå PIT,Växjö VÄX,0-1
+Omgång 6,2020-07-25,IK Uppsala UPP,Kopparbergs / Göteborg KOP,0-2
+Omgång 6,2020-07-25,Eskilstuna ESK,Vittsjö VIT,3-1
+Omgång 6,2020-07-25,Djurgården DIF,Kristianstad KRI,3-3
+Omgång 7,2020-07-29,Kristianstad KRI,Piteå PIT,0-0
+Omgång 7,2020-07-29,Vittsjö VIT,IK Uppsala UPP,0-0
+Omgång 7,2020-07-29,Djurgården DIF,Eskilstuna ESK,0-0
+Omgång 7,2020-07-29,Linköping LFC,Örebro ÖRE,0-0
+Omgång 7,2020-07-30,Växjö VÄX,Umeå IK UME,0-0
+Omgång 7,2020-07-30,Kopparbergs / Göteborg KOP,Rosengård FCR,0-0
+Omgång 8,2020-08-02,Kristianstad KRI,Umeå IK UME,0-0
+Omgång 8,2020-08-02,Rosengård FCR,Piteå PIT,0-0
+Omgång 8,2020-08-02,Växjö VÄX,Djurgården DIF,0-0
+Omgång 8,2020-08-02,Örebro ÖRE,Vittsjö VIT,0-0
+Omgång 8,2020-08-03,Kopparbergs / Göteborg KOP,Linköping LFC,0-0
+Omgång 8,2020-08-03,Eskilstuna ESK,IK Uppsala UPP,0-0
+Omgång 9,2020-08-07,IK Uppsala UPP,Rosengård FCR,0-0
+Omgång 9,2020-08-08,Umeå IK UME,Vittsjö VIT,0-0
+Omgång 9,2020-08-08,Piteå PIT,Kopparbergs / Göteborg KOP,0-0
+Omgång 9,2020-08-08,Eskilstuna ESK,Växjö VÄX,0-0
+Omgång 9,2020-08-08,Djurgården DIF,Örebro ÖRE,0-0
+Omgång 9,2020-08-08,Linköping LFC,Kristianstad KRI,0-0
+Omgång 10,2020-08-12,Örebro ÖRE,IK Uppsala UPP,0-0
+Omgång 10,2020-08-12,Piteå PIT,Djurgården DIF,0-0
+Omgång 10,2020-08-12,Kristianstad KRI,Växjö VÄX,0-0
+Omgång 10,2020-08-12,Vittsjö VIT,Kopparbergs / Göteborg KOP,0-0
+Omgång 10,2020-08-12,Umeå IK UME,Eskilstuna ESK,0-0
+Omgång 10,2020-08-12,Rosengård FCR,Linköping LFC,0-0
+Omgång 11,2020-08-16,Linköping LFC,IK Uppsala UPP,0-0
+Omgång 11,2020-08-16,Växjö VÄX,Vittsjö VIT,0-0
+Omgång 11,2020-08-16,Eskilstuna ESK,Piteå PIT,0-0
+Omgång 11,2020-08-16,Örebro ÖRE,Kristianstad KRI,0-0
+Omgång 11,2020-08-17,Kopparbergs / Göteborg KOP,Umeå IK UME,0-0
+Omgång 11,2020-08-17,Djurgården DIF,Rosengård FCR,0-0
+Omgång 12,2020-08-22,Piteå PIT,Umeå IK UME,0-0
+Omgång 12,2020-08-23,IK Uppsala UPP,Örebro ÖRE,0-0
+Omgång 12,2020-08-23,Vittsjö VIT,Eskilstuna ESK,0-0
+Omgång 12,2020-08-23,Kristianstad KRI,Djurgården DIF,0-0
+Omgång 12,2020-08-23,Rosengård FCR,Kopparbergs / Göteborg KOP,0-0
+Omgång 12,2020-08-23,Växjö VÄX,Linköping LFC,0-0
+Omgång 13,2020-08-29,Umeå IK UME,IK Uppsala UPP,0-0
+Omgång 13,2020-08-29,Kristianstad KRI,Kopparbergs / Göteborg KOP,0-0
+Omgång 13,2020-08-29,Örebro ÖRE,Linköping LFC,0-0
+Omgång 13,2020-08-30,Djurgården DIF,Piteå PIT,0-0
+Omgång 13,2020-08-30,Vittsjö VIT,Växjö VÄX,0-0
+Omgång 13,2020-08-30,Eskilstuna ESK,Rosengård FCR,0-0
+Omgång 14,2020-09-04,Växjö VÄX,Örebro ÖRE,0-0
+Omgång 14,2020-09-05,Linköping LFC,Umeå IK UME,0-0
+Omgång 14,2020-09-05,IK Uppsala UPP,Vittsjö VIT,0-0
+Omgång 14,2020-09-05,Kopparbergs / Göteborg KOP,Eskilstuna ESK,0-0
+Omgång 14,2020-09-06,Piteå PIT,Kristianstad KRI,0-0
+Omgång 14,2020-09-06,Rosengård FCR,Djurgården DIF,0-0
+Omgång 15,2020-09-12,Umeå IK UME,Växjö VÄX,0-0
+Omgång 15,2020-09-13,Piteå PIT,IK Uppsala UPP,0-0
+Omgång 15,2020-09-13,Linköping LFC,Vittsjö VIT,0-0
+Omgång 15,2020-09-13,Kristianstad KRI,Eskilstuna ESK,0-0
+Omgång 15,2020-09-13,Djurgården DIF,Kopparbergs / Göteborg KOP,0-0
+Omgång 15,2020-09-13,Örebro ÖRE,Rosengård FCR,0-0
+Omgång 16,2020-09-26,Växjö VÄX,Kristianstad KRI,0-0
+Omgång 16,2020-09-27,Kopparbergs / Göteborg KOP,Piteå PIT,0-0
+Omgång 16,2020-09-27,Rosengård FCR,Umeå IK UME,0-0
+Omgång 16,2020-09-27,IK Uppsala UPP,Linköping LFC,0-0
+Omgång 16,2020-09-27,Vittsjö VIT,Djurgården DIF,0-0
+Omgång 16,2020-09-28,Eskilstuna ESK,Örebro ÖRE,0-0
+Omgång 17,2020-10-03,Linköping LFC,Rosengård FCR,0-0
+Omgång 17,2020-10-03,Umeå IK UME,Kopparbergs / Göteborg KOP,0-0
+Omgång 17,2020-10-03,Djurgården DIF,Växjö VÄX,0-0
+Omgång 17,2020-10-04,Piteå PIT,Vittsjö VIT,0-0
+Omgång 17,2020-10-04,IK Uppsala UPP,Eskilstuna ESK,0-0
+Omgång 17,2020-10-04,Kristianstad KRI,Örebro ÖRE,0-0
+Omgång 18,2020-10-09,Vittsjö VIT,Umeå IK UME,0-0
+Omgång 18,2020-10-11,Växjö VÄX,Piteå PIT,0-0
+Omgång 18,2020-10-11,Kopparbergs / Göteborg KOP,IK Uppsala UPP,0-0
+Omgång 18,2020-10-11,Rosengård FCR,Kristianstad KRI,0-0
+Omgång 18,2020-10-11,Eskilstuna ESK,Linköping LFC,0-0
+Omgång 18,2020-10-11,Örebro ÖRE,Djurgården DIF,0-0
+Omgång 19,2020-10-17,IK Uppsala UPP,Växjö VÄX,0-0
+Omgång 19,2020-10-17,Vittsjö VIT,Rosengård FCR,0-0
+Omgång 19,2020-10-17,Djurgården DIF,Linköping LFC,0-0
+Omgång 19,2020-10-17,Kopparbergs / Göteborg KOP,Örebro ÖRE,0-0
+Omgång 19,2020-10-18,Umeå IK UME,Kristianstad KRI,0-0
+Omgång 19,2020-10-18,Piteå PIT,Eskilstuna ESK,0-0
+Omgång 20,2020-10-31,Örebro ÖRE,Umeå IK UME,0-0
+Omgång 20,2020-11-01,Eskilstuna ESK,Djurgården DIF,0-0
+Omgång 20,2020-11-01,Rosengård FCR,IK Uppsala UPP,0-0
+Omgång 20,2020-11-01,Linköping LFC,Piteå PIT,0-0
+Omgång 20,2020-11-01,Kristianstad KRI,Vittsjö VIT,0-0
+Omgång 20,2020-11-01,Växjö VÄX,Kopparbergs / Göteborg KOP,0-0
+Omgång 21,2020-11-07,Piteå PIT,Rosengård FCR,0-0
+Omgång 21,2020-11-07,Umeå IK UME,Djurgården DIF,0-0
+Omgång 21,2020-11-07,Växjö VÄX,Eskilstuna ESK,0-0
+Omgång 21,2020-11-07,Linköping LFC,Kopparbergs / Göteborg KOP,0-0
+Omgång 21,2020-11-07,IK Uppsala UPP,Kristianstad KRI,0-0
+Omgång 21,2020-11-07,Vittsjö VIT,Örebro ÖRE,0-0
+Omgång 22,2020-11-15,Kopparbergs / Göteborg KOP,Vittsjö VIT,0-0
+Omgång 22,2020-11-15,Eskilstuna ESK,Umeå IK UME,0-0
+Omgång 22,2020-11-15,Rosengård FCR,Växjö VÄX,0-0
+Omgång 22,2020-11-15,Djurgården DIF,IK Uppsala UPP,0-0
+Omgång 22,2020-11-15,Örebro ÖRE,Piteå PIT,0-0
+Omgång 22,2020-11-15,Kristianstad KRI,Linköping LFC,0-0
