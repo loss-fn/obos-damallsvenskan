@@ -1,0 +1,37 @@
+Round,Team(H),Team(A),Goals(H),Goals(A)
+1,Umeå IK FF,Piteå IF DFF,2,3
+1,Linköpings FC,Växjö DFF,3,0
+1,IK Uppsala,Djurgårdens IF FF,3,2
+1,KIF Örebro DFF,Eskilstuna United DFF,3,3
+1,FC Rosengård,Vittsjö GIK,1,0
+1,Kopparbergs/Göteborg FC,Kristianstads DFF,5,1
+2,Växjö DFF,IK Uppsala,1,1
+2,Eskilstuna United DFF,Kopparbergs/Göteborg FC,1,1
+2,Kristianstads DFF,FC Rosengård,0,1
+2,Djurgårdens IF FF,Umeå IK FF,1,1
+2,Piteå IF DFF,KIF Örebro DFF,1,1
+2,Vittsjö GIK,Linköpings FC,1,2
+3,Umeå IK FF,KIF Örebro DFF,0,2
+3,Kopparbergs/Göteborg FC,Växjö DFF,4,0
+3,FC Rosengård,Eskilstuna United DFF,1,2
+3,IK Uppsala,Piteå IF DFF,0,1
+3,Vittsjö GIK,Kristianstads DFF,3,3
+3,Linköpings FC,Djurgårdens IF FF,1,0
+4,Piteå IF DFF,Linköpings FC,2,2
+4,KIF Örebro DFF,Kopparbergs/Göteborg FC,0,1
+4,Djurgårdens IF FF,Vittsjö GIK,2,1
+4,IK Uppsala,Umeå IK FF,3,0
+4,Växjö DFF,FC Rosengård,0,3
+4,Eskilstuna United DFF,Kristianstads DFF,2,3
+5,Umeå IK FF,FC Rosengård,0,3
+5,KIF Örebro DFF,Växjö DFF,1,0
+5,Vittsjö GIK,Piteå IF DFF,0,1
+5,Linköpings FC,Eskilstuna United DFF,1,0
+5,Kristianstads DFF,IK Uppsala,2,1
+5,Kopparbergs/Göteborg FC,Djurgårdens IF FF,2,0
+6,Umeå IK FF,Linköpings FC,3,2
+6,FC Rosengård,KIF Örebro DFF,6,0
+6,Piteå IF DFF,Växjö DFF,0,1
+6,Djurgårdens IF FF,Kristianstads DFF,3,3
+6,Eskilstuna United DFF,Vittsjö GIK,3,1
+6,IK Uppsala,Kopparbergs/Göteborg FC,0,2
