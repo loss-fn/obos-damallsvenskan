@@ -101,6 +101,6 @@ if __name__ == "__main__":
             for c in pCount]
         rest['counts'] = np.asarray(count)
 
-        print(rest)
+        print(rest[0:6]) # only print the matches in this round
         if args.score:
             print("Score: %.2f" % (score_prediction(pTest, yTest)))
